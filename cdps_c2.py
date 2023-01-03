@@ -24,9 +24,9 @@ def modifyHTML():
     aux.close()
 
 def main():
-    createEnvironment()
+    # createEnvironment()
     modifyHTML()
-    call(["python3", "practica_creativa2/bookinfo/src/productpage/productpage_monolith.py", "2001"])
+    # call(["python3", "practica_creativa2/bookinfo/src/productpage/productpage_monolith.py", "2001"])
 
 if __name__=="__main__":
     main()

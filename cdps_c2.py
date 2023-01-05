@@ -16,7 +16,7 @@ def modifyHTML():
     aux=open("practica_creativa2/bookinfo/src/productpage/templates/auxiliar.html", "w+")
     for line in html:
         if "{% block title %}Simple Bookstore App{% endblock %}" in line:
-            aux.write("{% block title %}" + os.environ.get('GROUP_NUMBER') + "{% endblock %}")
+            aux.write("{% block title %}" + str(os.environ.get('GROUP_NUMBER')) + "{% endblock %}")
         else:
             aux.write(line)
     call(["mv", "practica_creativa2/bookinfo/src/productpage/templates/auxiliar.html", "practica_creativa2/bookinfo/src/productpage/templates/productpage.html"])
